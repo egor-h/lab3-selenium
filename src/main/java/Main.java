@@ -55,7 +55,6 @@ public class Main {
 
         // "Студентам"
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector(".main-menu-item > a"))).click();
-        wait.withTimeout(Duration.ofSeconds(3));
 
         // "Расписание занятий"
         new WebDriverWait(driver, 10).until(ExpectedConditions.elementToBeClickable(By.cssSelector(".nav-list > p > a"))).click();
